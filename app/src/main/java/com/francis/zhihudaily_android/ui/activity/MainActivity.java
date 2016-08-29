@@ -1,14 +1,27 @@
 package com.francis.zhihudaily_android.ui.activity;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.BaseAdapter;
 import com.francis.zhihudaily_android.R;
+import com.francis.zhihudaily_android.ui.activity.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
+
+	private static final int PAGE_COUNT = 7;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		layoutId = R.layout.activity_main;
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+
+		TabLayout tabLayout = (TabLayout) findViewById(R.id.main_pager_tabs);
+		ViewPager viewPager = (ViewPager) findViewById(R.id.main_pager);
+
+		viewPager.setOffscreenPageLimit(PAGE_COUNT);
+
+		
 	}
 }
