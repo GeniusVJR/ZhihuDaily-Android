@@ -1,7 +1,8 @@
-package com.francis.zhihudaily_android;
+package com.francis.zhihudaily_android.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.francis.zhihudaily_android.R;
 
 public class MainActivity extends AppCompatActivity {
 
