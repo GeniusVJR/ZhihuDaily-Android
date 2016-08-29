@@ -6,11 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.BaseAdapter;
 import com.francis.zhihudaily_android.R;
+import com.francis.zhihudaily_android.constant.Constants;
 import com.francis.zhihudaily_android.ui.activity.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
 
-	private static final int PAGE_COUNT = 7;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,8 @@ public class MainActivity extends BaseActivity {
 		TabLayout tabLayout = (TabLayout) findViewById(R.id.main_pager_tabs);
 		ViewPager viewPager = (ViewPager) findViewById(R.id.main_pager);
 
-		viewPager.setOffscreenPageLimit(PAGE_COUNT);
+		viewPager.setOffscreenPageLimit(Constants.PAGE_COUNT);
 
-		
+
 	}
 }
