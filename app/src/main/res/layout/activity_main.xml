@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.v4.widget.DrawerLayout
-		android:id="@+id/drawer_layout"
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/layout_drawer"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		tools:context=".ui.activity.MainActivity"
-		tools:openDrawer="start">
-
-<android.support.design.widget.CoordinatorLayout
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:tools="http://schemas.android.com/tools"
-		style="@style/baseLayoutParam"
-		xmlns:app="http://schemas.android.com/apk/res-auto"
-		tools:context=".ui.activity.MainActivity"
+		tools:openDrawer="start"
 		>
-	<android.support.design.widget.AppBarLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+	<android.support.design.widget.CoordinatorLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools"
+			tools:context=".ui.activity.MainActivity"
+			style="@style/baseLayoutParam"
 			>
+		<android.support.design.widget.AppBarLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
 
 		<include layout="@layout/layout_toolbar"/>
-		
-		<android.support.design.widget.TabLayout
-				android:id="@+id/main_pager_tabs"
-				style="@style/tabLayoutStyle"/>
-	</android.support.design.widget.AppBarLayout>
 
-	<android.support.v4.view.ViewPager
-			android:id="@+id/main_pager"
-			style="@style/mainPagerStyle"
-			app:layout_behavior="@string/appbar_scrolling_view_behavior"
-			/>
-
-	<android.support.design.widget.FloatingActionButton
-			android:id="@+id/fab_pick_date"
-			style="@style/floatingActionButtonStyle"
-			/>
+		<android.support.design.widget.FloatingActionButton
+				android:id="@+id/fab_pick_date"
+				style="@style/floatingActionButtonStyle"
+				/>
 
 
-</android.support.design.widget.CoordinatorLayout>
+	</android.support.design.widget.CoordinatorLayout>
 
 	<!-- Navigation Drawer -->
 	<android.support.design.widget.NavigationView
@@ -52,6 +41,7 @@
 			android:layout_gravity="start"
 			android:fitsSystemWindows="true"
 			app:headerLayout="@layout/nav_header_layout"
-			app:menu="@menu/drawer_menu"/>
+			app:menu="@menu/drawer_menu"
+			/>
 
 </android.support.v4.widget.DrawerLayout>
