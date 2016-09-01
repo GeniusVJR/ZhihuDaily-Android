@@ -5,43 +5,46 @@ import java.util.List;
 /**
  * @author taoc @ Zhihu Inc.
  * @since 08-29-2016
+ *
+ * 日报新闻
  */
 public class DailyNews {
 
-	private String date;
-	private String dailyTitle;
-	private String thumbnailUrl;
-	private List<Question> questions;
+	private int type;
+	private int id;
 
-	public String getDate() {
-		return date;
+	private String title;
+	private String imgId;
+
+	public int getType() {
+		return type;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setType(int type) {
+		this.type = type;
 	}
 
-	public String getDailyTitle() {
-		return dailyTitle;
+	public int getId() {
+		return id;
 	}
 
-	public void setDailyTitle(String dailyTitle) {
-		this.dailyTitle = dailyTitle;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getThumbnailUrl() {
-		return thumbnailUrl;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setThumbnailUrl(String thumbnailUrl) {
-		this.thumbnailUrl = thumbnailUrl;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
-	public List<Question> getQuestions() {
-		return questions;
+	public String getImgId() {
+		return imgId;
 	}
 
-	public void setQuestions(List<Question> questions) {
-		this.questions = questions;
+	public void setImgId(String imgId) {
+		this.imgId = imgId;
 	}
 }

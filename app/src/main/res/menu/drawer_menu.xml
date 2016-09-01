@@ -7,11 +7,11 @@
 		<item
 				android:id="@+id/feed_item"
 				android:checked="true"
-				android:icon="@mipmap/ic_launcher"
+				android:icon="@drawable/ic_launcher"
 				android:title="首页"/>
 		<item
 				android:id="@+id/daily_item"
-				android:icon="@mipmap/ic_launcher"
+				android:icon="@drawable/ic_launcher"
 				android:title="首页"/>
 	</group>
 </menu>
