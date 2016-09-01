@@ -14,6 +14,7 @@ import com.francis.zhihudaily_android.R;
 import com.francis.zhihudaily_android.constant.Constants;
 import com.francis.zhihudaily_android.ui.activity.base.BaseActivity;
 import com.francis.zhihudaily_android.ui.fragment.MainFragment;
+import com.francis.zhihudaily_android.utils.ActivityUtils;
 
 public class MainActivity extends BaseActivity {
 
@@ -54,7 +55,11 @@ public class MainActivity extends BaseActivity {
 		//设置fragment
 		MainFragment mainFragment = (MainFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.main_framelayout);
-
+		if(mainFragment != null){
+			mainFragment = MainFragment.newInstance();
+			ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),
+					mainFragment, R.id.main_framelayout);
+		}
 
 
 	}
