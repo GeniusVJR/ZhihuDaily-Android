@@ -26,4 +26,10 @@ public class DailyClient {
 
 
 	}
+
+
+
+	public DailyAPI getClient(){
+		return mDailyAPI;
+	}
 }
