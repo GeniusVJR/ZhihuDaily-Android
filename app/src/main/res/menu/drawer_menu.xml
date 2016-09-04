@@ -8,10 +8,15 @@
 				android:id="@+id/feed_item"
 				android:checked="true"
 				android:icon="@drawable/ic_launcher"
-				android:title="首页"/>
+				android:title="知乎精选"/>
 		<item
 				android:id="@+id/daily_item"
 				android:icon="@drawable/ic_launcher"
-				android:title="首页"/>
+				android:title="豆瓣精选"/>
+
+		<item
+				android:id="@+id/guoke_item"
+				android:icon="@drawable/ic_launcher"
+				android:title="果壳精选"/>
 	</group>
 </menu>

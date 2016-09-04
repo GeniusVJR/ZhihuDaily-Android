@@ -5,18 +5,5 @@
 		android:background="?attr/colorPrimaryDark"
 		android:theme="@style/ThemeOverlay.AppCompat.Dark"
 		>
-
-	<ImageView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:src="@drawable/ic_launcher"/>
-
-	<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal"
-			android:layout_marginTop="100dp"
-			android:text="知乎日报"/>
-
+	
 </FrameLayout>
