@@ -5,5 +5,5 @@
 		android:background="?attr/colorPrimaryDark"
 		android:theme="@style/ThemeOverlay.AppCompat.Dark"
 		>
-	
+
 </FrameLayout>

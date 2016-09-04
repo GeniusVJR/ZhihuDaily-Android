@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.francis.zhihudaily_android.R;
 import com.francis.zhihudaily_android.model.DailyNews;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +22,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 	private Context mContext;
 	private List<DailyNews> mDailyNewses;
 	private OnItemClickListener mOnItemClickListener;
+
+	public MainAdapter(List<DailyNews> list) {
+		mDailyNewses = list;
+	}
 
 	@Override
 	public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -46,9 +51,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
 		public ViewHolder(View itemView) {
 			super(itemView);
+			newsTitle = (TextView) itemView.findViewById(R.id.main_news_title);
+			newsImg = (ImageView) itemView.findViewById(R.id.main_new_img);
 		}
 	}
 
+	public void setOnItemClickListener(OnItemClickListener listener){
+		this.mOnItemClickListener = listener;
+	}
 	/**
 	 * Item 点击事件
 	 */

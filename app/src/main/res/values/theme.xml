@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- 定义 app 的日间模式与夜间模式-->
+	<style name="DayTheme" parent="AppTheme.NoActionBar">
+
+		<item name="my_theme">day</item>
+
+	</style>
+
+
+	<style name="NightTheme" parent="AppTheme.NoActionBar">
+
+		<item name="my_theme">night</item>
+
+
+	</style>
+</resources>
