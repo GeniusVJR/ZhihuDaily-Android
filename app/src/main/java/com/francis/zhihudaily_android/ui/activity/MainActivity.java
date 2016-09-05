@@ -18,7 +18,7 @@ import com.francis.zhihudaily_android.ui.activity.base.BaseActivity;
 import com.francis.zhihudaily_android.ui.fragment.MainFragment;
 import com.francis.zhihudaily_android.utils.ActivityUtils;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainFragment.OnViewPagerCreated{
 
 	private DrawerLayout mDrawerLayout;
 
@@ -70,4 +70,8 @@ public class MainActivity extends AppCompatActivity {
 		fragmentTransaction.commit();
 	}
 
+	@Override
+	public void viewPagerCreated() {
+
+	}
 }
