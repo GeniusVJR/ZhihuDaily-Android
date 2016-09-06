@@ -9,11 +9,12 @@ import rx.Observable;
  * @author taoc @ Zhihu Inc.
  * @since 09-01-2016
  */
-public interface DailyAPI {
+public class DailyAPI {
 
 
-	@GET("api/4/news/{newsId}")
-	Observable<DailyNews> updateNews(@Path ("newsId") String newsId);
 
+	// 获取果壳精选的文章列表,通过组合相应的参数成为完整的url
+	// Guokr handpick articles. make complete url by combining params
+	public static final String GUOKR_ARTICLES = "http://apis.guokr.com/handpick/article.json?retrieve_type=by_since&category=all&limit=20&ad=1";
 
 }
